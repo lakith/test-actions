@@ -24,11 +24,11 @@ const Container = styled.div`
     max-width: 100%;
 `;
 
-const HeaderLine = styled.div`
-    margin-top: -20px;
-    border-radius: 40px;
-    z-index: 1;
-`;
+// const HeaderLine = styled.div`
+//     margin-top: -20px;
+//     border-radius: 40px;
+//     z-index: 1;
+// `;
 
 const Header = styled.header`
     position: relative;
@@ -66,7 +66,12 @@ const HeaderTitle = styled.h1`
 `;
 
 const MainContent = styled.div`
-    padding: 0 1rem 1.5rem; 
+    padding: 0 1rem 1.5rem;
+    border: solid 5px red;
+    margin-top: -20px;
+    z-index: 1;
+    border-radius: 20px;
+    background: wheat;
 `;
 
 const GrayLine = styled.h1`
@@ -249,7 +254,7 @@ const Home = () => {
 
     return (
         <Container>
-            <HeaderLine>
+            {/* <HeaderLine> */}
             <Header>
                 <HeaderImage>
                     <HeaderImg src="https://s3-alpha-sig.figma.com/img/c862/cfa0/8b479bf669f459c69f7c87c13c641f94?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kmIeL5gKdbiM5L3gMgngdznYtLU-~uEGEQ9yaLc1ghNoBjlz3DbOteu-mleBD5sOUL6y5P7fktwuXM7UFMJ6PHOal-6M60zWvyb9m1~v9YAsFIxEPzEXpHU~vOMZexXxL9pWUqimc1pOYDaaNnjeY~gCbdXX1LldylAauoQSHlOpWZHNPy7tOxEExahenb2D1dqcR5gaumbKB~XSORMuFxDPFdRCyka2CAOXx9Qy-SyL6idDGpQkDXuUZjbUq9lu77W9D--kHiyQqiWAFyyI78aZrtS8UA43GX9tzX0cK4jK~7sArDg-30XOUfFNnaeWugzM2wWrFsfCzVXgLKakKA__" alt="Tokyo cityscape" />
@@ -321,7 +326,7 @@ const Home = () => {
                     ))}
                 </StoreGrid>
             </MainContent>
-            </HeaderLine>
+            {/* </HeaderLine> */}
         </Container>
     );
 };
